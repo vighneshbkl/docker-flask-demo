@@ -7,7 +7,7 @@ pipeline {
 
         stage('Build docker image') {
             steps {  
-                sh 'docker build -t vighneshacharya/flaskapp:$BUILD_NUMBER .'
+                sh 'docker build -t vighneshacharya/flaskapp:$BUILD_NUMBER /home'
             }
         }
         stage('login to dockerhub') {
